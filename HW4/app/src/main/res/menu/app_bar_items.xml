@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/shoppingCart"
+        android:title="@string/app_bar_shoppingcart"
+        android:icon="@drawable/ic_baseline_add_shopping_cart_24px"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/settings"
+        android:title="@string/app_bar_settings"
+        app:showAsAction="never"
+        />
 
 </menu>
