@@ -30,7 +30,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void convert(View view) {
-        double inputtemp = new Double(temp.getText().toString());
+        //double inputtemp = new Double(temp.getText().toString());
+
+
+
 
         /*
         Try to say if inputtemp is null or empty, it will show the toast msg "Enter the valid temperature"
@@ -43,20 +46,20 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Please Enter the Valid Temperature  ", Toast.LENGTH_SHORT).show();
             return;
         }
-        else
-        {*/
-            if(tocelsius.isChecked()){
-                inputtemp = TempConversion.fToc(inputtemp);}
-            else if(tofahrenheit.isChecked()){
-                inputtemp = TempConversion.cTof(inputtemp);
-            temp.setText(new Double(inputtemp).toString());}
-            else{
-                //This isn't working either
-                Toast.makeText(this, "Please Enter the Valid Temperature  ", Toast.LENGTH_SHORT).show();
+
+        */
+        if (temp.getText().toString().isEmpty()) {
+            Toast.makeText(this, "Please Enter the Valid Temperature  ", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else {
+            double inputtemp = Double.parseDouble(temp.getText().toString());
+            if (tocelsius.isChecked ()) {
+                inputtemp = TempConversion.fToc (inputtemp);
+            } else if (tofahrenheit.isChecked ()) {
+                inputtemp = TempConversion.cTof (inputtemp);
+                temp.setText (new Double (inputtemp).toString ());
             }
-
-
-
-
+        }
     }
 }
