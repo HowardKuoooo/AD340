@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">HW5</string>
-    <string name="default_celsius">21</string>
-    <string name="default_TempConversion">Default Temp</string>
-    <string name="default_fahrenheit">70</string>
-</resources>
