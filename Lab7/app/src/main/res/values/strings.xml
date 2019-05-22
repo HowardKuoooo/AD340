@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="btn_get_data">No data yet</string>
+    <string name="waiting">waiting</string>
+</resources>
