@@ -27,7 +27,9 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, LoaderManager.LoaderCallbacks <String> {
 
 
-    public String TAG = "";
+    private TextView results;
+    public String TAG = "Camera RecyclerView";
+    public RecyclerViewAdapter adapter;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
